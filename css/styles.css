@@ -1,3 +1,9 @@
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+
 body{
     font-family:'Roboto', sans-serif;
     font-size: 16px;
@@ -12,6 +18,16 @@ body{
     --logo-color:#F4F4FD;
     --border-color:  #E7E9FC;
     --now-link-color: #434455;
+}
+
+.conteiner{
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0px auto;
+    height: auto;
+    width: 1158px;
+    outline: 2px solid tomato;
+
 }
 
 .accent{
@@ -44,6 +60,7 @@ body{
 
 .list{
     list-style: none;
+    margin-bottom: 0px;
 }
 
 .link{
@@ -64,24 +81,32 @@ body{
 
 .hero{
     background-color: var(--link-color);
+    text-align: center;
+    padding-top: 188px;
+    padding-bottom: 188px;
 }
 
 .hero-title{
+    margin-top: 0px;
+    margin-bottom: 40px;
     color: var(--white-color);
     font-size: 56px;
     line-height: 1.07;
     letter-spacing: 0.02em;
+    text-align: center;
 }
 
 .button{
     color: var(--white-color);
     background-color: var(--main-color);
-    border-radius: 4px;
-    font-family: inherit;
     font-style: normal;
+    font-family: inherit;
     font-weight: 500;
     line-height: 1.5;
     cursor: pointer;
+    border-radius: 4px;
+    padding: 16px 32px;
+    display: inline-block;
 }
 
 .button:hover{
@@ -92,6 +117,10 @@ body{
 .button:focus{
     background-color: var(--button-color);
     color: var(--white-color);
+}
+
+.section{
+    margin-top: 120px;
 }
 
 .visually-hidden{
@@ -113,12 +142,19 @@ body{
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
+    margin-top: 0px;
+    margin-bottom: 8px;
 }
 
 .future-text{
     color: var(--now-link-color);
     line-height: 1.5;
     letter-spacing: 0.02em;
+
+}
+
+.changes{
+    margin-bottom: 0;
 }
 
 .section-title{
@@ -127,6 +163,9 @@ body{
     line-height: 1.11;
     letter-spacing: 0.02em;
     text-transform: capitalize;
+    margin-top: 0px;
+    margin-bottom: 72px;
+    text-align: center;
 }
 
 .background{
@@ -139,6 +178,7 @@ body{
 
 .footer{
     background-color: var(--link-color);
+
 }
 
 .logo-footer{
