@@ -6,38 +6,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 
 <body>
-    <header>
-        <div class="conteiner">
+    <header class="header">
+        <div class="conteiner main-nav">
             <nav>
                 <a href="./index.html" class="logo">
                     <span class="accent">WEB</span>STUDIO
                 </a>
-                <ul class="list">
-                    <li><a href="./index.html" class="now-link">Studio</a></li>
-                    <li><a href="./portfolio.html" class="now-link">Portfolio</a></li>
-                    <li><a href="Contacts" class="now-link">Contacts</a></li>
+                <ul class="navigation-nav">
+                    <li class="item"><a href="./index.html" class="now-link current">Studio</a></li>
+                    <li class="item"><a href="./portfolio.html" class="now-link ">Portfolio</a></li>
+                    <li class="item"><a href="Contacts" class="now-link">Contacts</a></li>
                 </ul>
             </nav>
-        
+
             <address>
-                <ul class="list">
-                    <li><a href="info@devstudio.com" class="link">info@devstudio.com</a></li>
-                    <li><a href="+11 (000) 111-11-11" class="link">+11 (000) 111-11-11</a></li>
+                <ul class="contacts-nav">
+                    <li class="item"><a href="info@devstudio.com" class="link">info@devstudio.com</a></li>
+                    <li class="item"><a href="+11 (000) 111-11-11" class="link">+11 (000) 111-11-11</a></li>
                 </ul>
             </address>
         </div>
     </header>
 
     <main>
-        <section class="hero">
+        <section class="section hero">
                 <div class="conteiner">
                     <h1 class="hero-title">Effective Solutions<br>
                         for Your Business</h1>
-                   <button type="button" class="button">Order Service</button>
+                   <button type="button" class="hero-button">Order Service</button>
                 </div>
             
         </section>
@@ -45,25 +46,25 @@
         <section class="section">
             <div class="conteiner">
                 <h2 class="visually-hidden">OurStrategy</h2>
-                <ul class="list">
-                    <li>
+                <ul class="future-list">
+                    <li class="box">
                         <h3 class="future-title">Strategy</h3>
                         <p class="future-text">Our goal is to identify the business problem to walk away with the perfect and creative solution.</p>
                     </li>
                 
-                    <li>
+                    <li class="box">
                         <h3 class="future-title">Punctuality</h3>
                         <p class="future-text">Bring the key message to the brand's audience for the best price within the shortest possible time.</p>
                     </li>
                     
-                    <li>
+                    <li class="box">
                         <h3 class="future-title">Diligence</h3>
                         <p class="future-text">Research and confirm brands that present the strongest digital growth opportunities and minimize risk.</p>
                     </li>
                     
-                    <li>
+                    <li class="box">
                         <h3 class="future-title">Technologies</h3>
-                        <p class="future-text">Design practice focused on digital experiences. We bring forth a deep passion for problem-solving.</p>
+                        <p class="future-text info">Design practice focused on digital experiences. We bring forth a deep passion for problem-solving.</p>
                     </li>
                     
                 </ul>
@@ -72,11 +73,11 @@
         
         <section class="section">
             <div class="conteiner">
-                <h2 class="section-title">What are we doing</h2>
+                <h2 class="section-title-one">What are we doing</h2>
                 <ul class="list">
-                    <li><img src="./images/rectangle_71.jpg" width="360px" height="300px"></li>
-                    <li><img src="./images/rectangle_72.jpg" width="360px" height="300px"></li>
-                    <li><img src="./images/rectangle_73.jpg" width="360px" height="300px"></li>
+                    <li class="box-foto"><img class="img" src="./images/rectangle_71.jpg" width="360px" height="300px"></li>
+                    <li class="box-foto"><img class="img" src="./images/rectangle_72.jpg" width="360px" height="300px"></li>
+                    <li class="box-foto"><img class="img" src="./images/rectangle_73.jpg" width="360px" height="300px"></li>
                 </ul>
             </div>
         </section>
@@ -84,29 +85,38 @@
         <section class="background section">
             <div class="conteiner">
                     <h2 class="section-title">Our Team</h2>
-                <ul class="list">
-                    <li class="color"><img src="./images/img.jpg" width="264px" height="260px">
-                    <h3 class="future-title">Mark Guerrero</h3>
-                    <p class="future-text changes">Product Designer</p>
+
+                <ul class="future-list">
+                    <li class="box-color"><img src="./images/img.jpg" width="264px" height="260px">
+                        <div class="future-box">
+                            <h3 class="future-title">Mark Guerrero</h3>
+                            <p class="future-text">Product Designer</p>
+                        </div>
                     </li>
             
-                    <li class="color"><img src="./images/img_1.jpg" width="264px" height="260px">
-                    <h3 class="future-title">Tom Ford</h3>
-                    <p class="future-text changes">Frontend Developer</p>
+                    <li class="box-color"><img class="img" src="./images/img_1.jpg" width="264px" height="260px">
+                        <div class="future-box">
+                            <h3 class="future-title">Tom Ford</h3>
+                            <p class="future-text">Frontend Developer</p>
+                        </div>
                     </li>    
 
-                    <li class="color"><img src="./images/img_2.jpg" width="264px" height="260px">
-                    <h3 class="future-title">Camila Garcia</h3>
-                    <p class="future-text changes">Marketing</p>
+                    <li class="box-color"><img class="img" src="./images/img_2.jpg" width="264px" height="260px">
+                        <div class="future-box">
+                            <h3 class="future-title">Camila Garcia</h3>
+                            <p class="future-text">Marketing</p>
+                        </div>
                     </li>
 
-                    <li class="color"><img src="./images/img_3.jpg" width="264px" height="260px">
-                    <h3 class="future-title">Daniel Wilson</h3>
-                    <p class="future-text changes">UI Designer</p>
+                    <li class="box-color"><img class="img" src="./images/img_3.jpg" width="264px" height="260px">
+                        <div class="future-box">
+                            <h3 class="future-title">Daniel Wilson</h3>
+                            <p class="future-text">UI Designer</p>
+                        </div>
                     </li>
                 </ul>
             </div>
-        </section>
+        </section> 
     </main>
         
         <footer class="footer">
