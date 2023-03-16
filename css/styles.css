@@ -37,60 +37,81 @@ ol{
     margin: 0px;
 }
 
+*{
+    outline: 2px soli tomato;
+}
+
 .conteiner{
     padding-left: 15px;
     padding-right: 15px;
     margin: 0px auto;
     width: 1158px;
-    outline: 2px solid tomato;
+    outline: 2px soli tomato;
 }
 
 img{
     display: block;
+    width:auto;
+    height: auto;
 }
 
 .header{
-    padding: 24px 0px;
+    border-bottom: 1px solid #E7E9FC;
 }
 
-.main-nav{
+.conteiner.main-nav{
+    display: flex;
+   
+}
+
+.logo-nav{
     display: flex;
 }
 
 .accent{
     color: var(--main-color);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
 }
 
 .logo{
+    margin-right: auto;
+    padding-top: 24px;
+    padding-bottom: 24px;
+
     color: var(--link-color);
     font-family: 'Raleway';
     font-weight: 800;
     font-size: 18px;
     line-height: 1.33;
     text-decoration: none;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
 }
 
-.current{
-    padding: 24px 0px;
-
+.now-link.current{
     color: var(--main-color);
-    font-weight: 500;
-    line-height: 1.5;
-    text-decoration: none;
 }
 
 .navigation-nav{
     display: flex;
+    margin-left: 76px;
 }
 
 .navigation-nav .item:not(:last-child) {
     margin-right: 40px;
 }
 
+.contacts-nav.address{
+    margin-left: auto;
+}
+
 .contacts-nav{
     display: flex;
+    flex-direction: row;
     margin: 0px;
 
+    margin-left: 332px;
     list-style: none;
 }
 
@@ -115,20 +136,34 @@ img{
     color: var(--main-color);
 }
 
+.list-portfolio{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 72px;
+
+}
+
 .list{
     display: flex;
+    justify-content: space-between;
     margin: 0px;
 
     list-style: none;
 }
 
 .gallery{
-    margin: 0px;
-
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    row-gap: 48px;
     list-style: none;
 }
 
 .link{
+    display: block;
+    padding-top: 24px;
+    padding-bottom: 24px;
+
     color: var(--now-link-color);
     font-style: normal;
     line-height: 1.5;
@@ -144,7 +179,7 @@ img{
 .hero{
     padding-top: 188px;
     padding-bottom: 188px;
-    width: 1400px;
+    width: auto;
     margin: 0 auto;
 
     text-align: center;
@@ -175,14 +210,18 @@ img{
     letter-spacing: 0.04em;
 }
 
-.button:focus,
-.button:hover{
+.hero-button:focus,
+.hero-button:hover{
     background-color: var(--button-color);
     color: var(--white-color);
 }
 
 .section-info{
     padding-top: 120px;
+}
+
+.section.info{
+    padding-bottom: 0;
 }
 
 .section{
@@ -192,6 +231,7 @@ img{
 
 .section-portfolio{
     padding-top: 96px;
+    padding-bottom: 120px;
 }
 
 .visually-hidden{
@@ -209,26 +249,33 @@ img{
 
 .box{
     display: inline-block;
+
     min-width: 264px;
     padding: 0px;
     gap: 8px;
     margin-right: 24px;
 }
 
+.section.team{
+    padding-top: 0px;
+}
+
 .future-list{
     display: flex;
+    justify-content: space-between;
+
     list-style: none;
     margin: 0px;
 }
 
 .future-box{
+    text-align: center;
     min-width: 232px;
     height: 56px;
     padding: 32px 16px;
 }
 
 .future-title{
-    margin-top: 32px;
     margin-bottom: 8px;
 
     color: var(--link-color);
@@ -238,14 +285,39 @@ img{
     letter-spacing: 0.02em;
 }
 
+.group{
+    height: 420px;
+    width: 360px;
+    border-left: 1px solid #E7E9FC;
+    border-bottom: 1px solid #E7E9FC;
+    border-right: 1px solid #E7E9FC;
+}
+
+/* .foto-group{
+    height: 56px;
+    padding: 32px 16px;
+} */
+
+/* Выставить ли и дивы в портфолио !!!!!!!!!!!!!!!!!!!!!!!!!!! */
+
+.future-title.portfolio{
+    padding-top: 32px;
+    padding-left: 16px;
+}
+
 .future-text{
     display: inline-block;
-    min-width: 256px;
-
+    
     color: var(--now-link-color);
     line-height: 1.5;
     letter-spacing: 0.02em;
 }
+
+.future-text.portfolio{
+    padding-left: 16px;
+    padding-bottom: 32px;
+}
+
 
 .section-title{
     margin-top: 0px;
@@ -272,17 +344,13 @@ img{
     text-transform: capitalize;
 }
 
-.box-foto{
-    margin-right: 24px;
-}
-
 .background{
     background-color: var(--logo-color);
 }
 
 .box-color{
-    padding-bottom: 60px;
-    margin-right: 24px;
+    justify-content: space-between;
+
     height: 380px;
     max-width: 264px;
 
@@ -294,7 +362,7 @@ img{
 }
 
 .footer{
-    width: 1400px;
+    width: auto;
     margin: 0 auto;
     padding-bottom: 100px;
 
@@ -323,6 +391,7 @@ img{
 }
 
 .now-button{
+    padding: 12px 24px;
     background-color: var(--logo-color);
     border: 1px solid var(--white-color);
     border-radius: 4px;
@@ -338,4 +407,12 @@ img{
 .now-button:hover{
     background: var(--button-color);
     color: var(--white-color);
+}
+
+.portfolio-btn{
+    margin-left: 24px;
+}
+
+.portfolio-btn:first-child{
+    margin-left: 0px;
 }

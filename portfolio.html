@@ -13,7 +13,7 @@
 <body>
     <header class="header">
         <div class="conteiner main-nav">
-            <nav>
+            <nav class="logo-nav">
                 <a href="./index.html" class="logo">
                     <span class="accent">WEB</span>STUDIO
                 </a>
@@ -24,10 +24,10 @@
                 </ul>
             </nav>
         
-            <address>
+            <address class="contacts-nav address">
                 <ul class="contacts-nav">
-                    <li><a href="info@devstudio.com" class="link">info@devstudio.com</a></li>
-                    <li><a href="+11 (000) 111-11-11" class="link">+11 (000) 111-11-11</a></li>
+                    <li class="item"><a href="info@devstudio.com" class="link">info@devstudio.com</a></li>
+                    <li class="item"><a href="+11 (000) 111-11-11" class="link">+11 (000) 111-11-11</a></li>
                 </ul>
             </address>
         </div>
@@ -36,12 +36,12 @@
     <main>
         <section class="section-portfolio">
             <div class="conteiner">
-                <ul class="list">
-                    <li><button type="button" class="now-button">All</button></li>
-                    <li><button type="button" class="now-button">Web Site</button></li>
-                    <li><button type="button" class="now-button">App</button></li>
-                    <li><button type="button" class="now-button">Design</button></li>
-                    <li><button type="button" class="now-button">Marketing</button></li>
+                <ul class="list-portfolio">
+                    <li class="portfolio-btn"><button type="button" class="now-button">All</button></li>
+                    <li class="portfolio-btn"><button type="button" class="now-button">Web Site</button></li>
+                    <li class="portfolio-btn"><button type="button" class="now-button">App</button></li>
+                    <li class="portfolio-btn"><button type="button" class="now-button">Design</button></li>
+                    <li class="portfolio-btn"><button type="button" class="now-button">Marketing</button></li>
                 </ul>
             </div>
 
@@ -50,50 +50,76 @@
                 <h1 class="visually-hidden">Gallery</h1>
 
                 <ul class="gallery">
-                    <li>
-                        <img class="img" src="./images/img port.jpg" width="360" height="300">
-                        <h2 class="future-title">Banking App Interface Concept</h2>
-                        <p class="future-text">App</p>
+                    <li class="group">
+                        <div class="foto-group">
+                            <img class="img" src="./images/img port.jpg" width="360" height="300">
+                            <h2 class="future-title portfolio">Banking App Interface Concept</h2>
+                            <p class="future-text portfolio">App</p>
+                        </div>
                     </li>
-                    <li>
-                        <img class="img" src="./images/img port (1).jpg" width="360" height="300">
-                        <h2 class="future-title">Cashless Payment</h2>
-                        <p class="future-text">Marketing</p>
+
+                    <li class="group">
+                        <div class="foto-group">
+                            <img class="img" src="./images/img port (1).jpg" width="360" height="300">
+                            <h2 class="future-title portfolio">Cashless Payment</h2>
+                            <p class="future-text portfolio">Marketing</p>
+                        </div>
                     </li>
-                    <li>
-                        <img class="img" src="./images/img port (2).jpg" width="360" height="300">
-                        <h2 class="future-title">Meditation App</h2>
-                        <p class="future-text">App</p>
+
+                    <li class="group">
+                        <div class="foto-group">
+                            <img class="img" src="./images/img port (2).jpg" width="360" height="300">
+                            <h2 class="future-title portfolio">Meditation App</h2>
+                            <p class="future-text portfolio">App</p>
+                        </div>
                     </li>
-                    <li>
-                        <img class="img" src="./images/img port (3).jpg" width="360" height="300">
-                        <h2 class="future-title">Taxi Service</h2>
-                        <p class="future-text">Marketing</p>
+
+                    <li class="group">
+                        <div class="foto-group">
+                            <img class="img" src="./images/img port (3).jpg" width="360" height="300">
+                            <h2 class="future-title portfolio">Taxi Service</h2>
+                            <p class="future-text portfolio">Marketing</p>
+                        </div>
                     </li>
-                    <li>
-                        <img class="img" src="./images/img port (4).jpg" width="360" height="300">
-                        <h2 class="future-title">Screen Illustrations</h2>
-                        <p class="future-text">Design</p>
+
+                    <li class="group">
+                        <div class="foto-group">
+                            <img class="img" src="./images/img port (4).jpg" width="360" height="300">
+                            <h2 class="future-title portfolio">Screen Illustrations</h2>
+                            <p class="future-text portfolio">Design</p>
+                        </div>
                     </li>
-                    <li>
-                        <img class="img" src="./images/img port (5).jpg" width="360" height="300">
-                        <h2 class="future-title">Online Courses</h2>
-                        <p class="future-text">Marketing</p>
+
+                    <li class="group">
+                        <div class="foto-group">
+                            <img class="img" src="./images/img port (5).jpg" width="360" height="300">
+                            <h2 class="future-title portfolio">Online Courses</h2>
+                            <p class="future-text portfolio">Marketing</p>
+                        </div>
                     </li>
-                    <li>
-                        <img class="img" src="./images/img port (6).jpg" width="360" height="300">
-                        <h2 class="future-title">Instagram Stories Concept</h2>
-                        <p class="future-text">Design</p>
+
+                    <li class="group">
+                        <div class="foto-group">
+                            <img class="img" src="./images/img port (6).jpg" width="360" height="300">
+                            <h2 class="future-title portfolio">Instagram Stories Concept</h2>
+                            <p class="future-text portfolio">Design</p>
+                        </div>
                     </li>
-                    <li>
-                        <img class="img" src="./images/img port (7).jpg" width="360" height="300">
-                        <h2 class="future-title">Organic Food</h2>
-                        <p class="future-text">Web Site</p>
+
+                    <li class="group"> 
+                        <div class="foto-group">
+                            <img class="img" src="./images/img port (7).jpg" width="360" height="300">
+                            <h2 class="future-title portfolio">Organic Food</h2>
+                            <p class="future-text portfolio">Web Site</p>
+                        </div>
                     </li>
-                    <li>
-                        <img class="img" src="./images/img port (8).jpg" width="360" height="300">
-                        <h2 class="future-title">Fresh Coffee</h2>
-                        <p class="future-text">Web Site</p>
+
+                    <li class="group">
+                        <div class="foto-group">
+                            <img class="img" src="./images/img port (8).jpg" width="360" height="300">
+                            <h2 class="future-title portfolio">Fresh Coffee</h2>
+                            <p class="future-text portfolio">Web Site</p>
+                        </div>
                     </li>
                 </ul>
             </div>
