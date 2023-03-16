@@ -37,16 +37,11 @@ ol{
     margin: 0px;
 }
 
-*{
-    outline: 2px soli tomato;
-}
-
 .conteiner{
     padding-left: 15px;
     padding-right: 15px;
     margin: 0px auto;
     width: 1158px;
-    outline: 2px soli tomato;
 }
 
 img{
@@ -109,7 +104,7 @@ img{
 .contacts-nav{
     display: flex;
     flex-direction: row;
-    margin: 0px;
+    /* margin: 0px; */
 
     margin-left: 332px;
     list-style: none;
@@ -293,16 +288,9 @@ img{
     border-right: 1px solid #E7E9FC;
 }
 
-/* .foto-group{
+.foto-group{
     height: 56px;
     padding: 32px 16px;
-} */
-
-/* Выставить ли и дивы в портфолио !!!!!!!!!!!!!!!!!!!!!!!!!!! */
-
-.future-title.portfolio{
-    padding-top: 32px;
-    padding-left: 16px;
 }
 
 .future-text{
@@ -312,12 +300,6 @@ img{
     line-height: 1.5;
     letter-spacing: 0.02em;
 }
-
-.future-text.portfolio{
-    padding-left: 16px;
-    padding-bottom: 32px;
-}
-
 
 .section-title{
     margin-top: 0px;
