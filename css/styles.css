@@ -130,11 +130,14 @@ img{
     color: var(--main-color);
 }
 
+.group-btn{
+     padding-bottom: 72px;
+
+}
+
 .list-portfolio{
     display: flex;
     justify-content: center;
-    padding-bottom: 72px;
-
 }
 
 .list{
@@ -304,10 +307,13 @@ img{
     letter-spacing: 0.02em;
 }
 
+.future-group{
+    padding-top: 120px;
+}
+
 .section-title{
     margin-top: 0px;
     margin-bottom: 72px;
-    padding-top: 120px;
     text-align: center;
 
     color: var(--link-color);
@@ -357,7 +363,6 @@ img{
 
 .footer-two{
     padding-top: 100px;
-    padding-left: 0px;
 }
 
 .logo-footer{
